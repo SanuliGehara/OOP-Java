@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Inheritance_I/Inheritance_I.iml" filepath="$PROJECT_DIR$/Inheritance_I/Inheritance_I.iml" />
       <module fileurl="file://$PROJECT_DIR$/Inheritance_II/Inheritance_II.iml" filepath="$PROJECT_DIR$/Inheritance_II/Inheritance_II.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java_Interface/Java_Interface.iml" filepath="$PROJECT_DIR$/Java_Interface/Java_Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Method_Overriding/Method_Overriding.iml" filepath="$PROJECT_DIR$/Method_Overriding/Method_Overriding.iml" />
     </modules>
   </component>
 </project>

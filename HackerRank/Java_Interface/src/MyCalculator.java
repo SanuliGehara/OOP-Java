@@ -1,5 +1,5 @@
 public class MyCalculator implements AdvancedArithmetic{
-    @Override
+// No need to have @Override signature
     public int divisor_sum(int n) {
         int sum = 0;
         for (int i=1; i<=n; i++) {
