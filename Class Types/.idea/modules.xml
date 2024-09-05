@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Anonymous Class/Anonymous Class.iml" filepath="$PROJECT_DIR$/Anonymous Class/Anonymous Class.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Classes Types.iml" filepath="$PROJECT_DIR$/.idea/Classes Types.iml" />
       <module fileurl="file://$PROJECT_DIR$/Inner Class/Inner Class.iml" filepath="$PROJECT_DIR$/Inner Class/Inner Class.iml" />
       <module fileurl="file://$PROJECT_DIR$/Static Class/Static Class.iml" filepath="$PROJECT_DIR$/Static Class/Static Class.iml" />
