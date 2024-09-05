@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Classes Types.iml" filepath="$PROJECT_DIR$/.idea/Classes Types.iml" />
       <module fileurl="file://$PROJECT_DIR$/Inner Class/Inner Class.iml" filepath="$PROJECT_DIR$/Inner Class/Inner Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Static Class/Static Class.iml" filepath="$PROJECT_DIR$/Static Class/Static Class.iml" />
       <module fileurl="file://$PROJECT_DIR$/Wrapper Class/Wrapper Class.iml" filepath="$PROJECT_DIR$/Wrapper Class/Wrapper Class.iml" />
     </modules>
   </component>
