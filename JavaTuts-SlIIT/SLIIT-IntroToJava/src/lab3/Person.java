@@ -1,8 +1,8 @@
 package lab3;
 
 public class Person {
-    private String name;
-    private String address;
+    protected String name;
+    protected String address;
 
     public Person(String name, String  address) {
         this.name = name;
@@ -10,6 +10,6 @@ public class Person {
     }
 
     public void showDetails() {
-        System.out.println("Name: " + this.name + "\nAddress: " + this.address);
+        System.out.println("\nName: " + this.name + "\nAddress: " + this.address);
     }
 }
