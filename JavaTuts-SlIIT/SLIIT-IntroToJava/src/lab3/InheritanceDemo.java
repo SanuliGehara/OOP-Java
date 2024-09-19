@@ -7,5 +7,8 @@ public class InheritanceDemo {
 
         Student student1 = new Student("Sanuli", "34/78A, Flower Rd, Homagama.", "A001");
         student1.showDetails();
+
+        PartTimeStudent ptStd1 = new PartTimeStudent("Helani", "98/7, Lumini Rd, Galle." , "B007", 8);
+        ptStd1.showDetails();
     }
 }

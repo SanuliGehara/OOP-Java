@@ -1,7 +1,7 @@
 package lab3;
 
 public class Student extends Person{
-    String studentId;
+    protected String studentId;
 
     public Student(String name, String address, String studentId) {
         super(name, address);
