@@ -8,10 +8,16 @@ public class Dog extends Pet{
         this.noOfMasters = m;
     }
 
-
     Dog(String n, String o) {
         super(n, o);
         super.age = 0;
         this.noOfMasters = 1;
+    }
+
+    @Override
+    public void showDetails() {
+        super.showDetails();
+        System.out.println("I am a dog. I have " + this.noOfMasters +
+                " masters at home");
     }
 }

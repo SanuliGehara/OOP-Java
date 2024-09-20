@@ -13,4 +13,10 @@ public class Cat extends Pet{
         super.age = 0;
         this.livesLeft = 7;
     }
+
+    public void showDetails(){
+        super.showDetails();
+        System.out.println("I am a cat. " +
+                this.livesLeft + " lives remain for me.");
+    }
 }
