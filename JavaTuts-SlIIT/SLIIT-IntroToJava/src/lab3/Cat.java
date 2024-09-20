@@ -7,4 +7,10 @@ public class Cat extends Pet{
         super(n, o, a);
         this.livesLeft = l;
     }
+
+    public Cat(String n, String o) {
+        super(n,o);
+        super.age = 0;
+        this.livesLeft = 7;
+    }
 }
