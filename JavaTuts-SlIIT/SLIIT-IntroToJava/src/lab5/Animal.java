@@ -60,7 +60,7 @@ class ToyCat extends Cat {
     }
 }
 
-class Main {
+class MainExc {
     public static void main(String[] args) {
 
         Cat mycat = new Cat("Micky");
