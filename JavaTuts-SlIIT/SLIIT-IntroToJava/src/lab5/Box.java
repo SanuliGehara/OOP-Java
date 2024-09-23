@@ -4,11 +4,10 @@ public class Box implements ICompute{
     private int length, width, height;
     private int volume;
 
-    public Box(int length, int width, int height, int volume) {
+    public Box(int length, int width, int height) {
         this.length = length;
         this.width = width;
         this.height = height;
-        this.volume = volume;
     }
 
     @Override

@@ -7,12 +7,11 @@ public class Person implements ICompute{
     private double otHrs;
     private double netSal;
 
-    public Person(String name, double basicSal, double otHrs, double otRate, double netSal) {
+    public Person(String name, double basicSal, double otHrs, double otRate) {
         this.name = name;
         this.basicSal = basicSal;
         this.otHrs = otHrs;
         this.otRate = otRate;
-        this.netSal = netSal;
     }
 
     @Override
