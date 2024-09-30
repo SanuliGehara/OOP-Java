@@ -24,29 +24,29 @@ public class Student {
         this.finalExamMark = finalExamMark;
     }
 
-    public double calculateMinorAssignmentMarks() {
-        totalMinorAssignmentMark = (this.minorComp1 * 6.0/15 *100) + (this.minorComp2 * 9.0/15) * 100/15;
-        return totalMinorAssignmentMark;
+    public void calculateMinorAssignmentMarks() {
+        totalMinorAssignmentMark = (this.minorComp1 * 0.06) + (this.minorComp2 * 0.09) ;
     }
 
-    public double calculateProjectMarks() {
-        totalProjectMark = (this.projectDesign * 15.0/35 * 100 )+ (this.projectImplementation * 20.0/35) * 100/35;
-        return totalProjectMark;
+    public void calculateProjectMarks() {
+        totalProjectMark = (this.projectDesign * 0.15 )+ (this.projectImplementation * 0.20);
     }
 
+    public double getMinorCompMark() { return this.totalMinorAssignmentMark;}
+    public double  getProjectMark() { return this.totalProjectMark;}
     public double getFinalExamMark() { return this.finalExamMark;}
 
     // Calculate Total marks = Minor + Project + Final
     public void calculateOveralMark() {
         calculateMinorAssignmentMarks();
         calculateProjectMarks();
-        totalOverallMark = totalMinorAssignmentMark + totalProjectMark + (finalExamMark * 0.5);
+        totalOverallMark = totalMinorAssignmentMark  + totalProjectMark  + (finalExamMark * 0.5);
     }
 
     // Calculate the grade (HD, D, CR, C, F, I)
     public void calculateGrade() {
-        if (finalExamMark > 50 && totalMinorAssignmentMark > 35 && totalProjectMark>35
-                && totalOverallMark >50) {
+        if (finalExamMark >= 50 && totalMinorAssignmentMark >= 15* 0.35 && totalProjectMark> 35 * 0.35
+                && totalOverallMark >= 50) {
             if (totalOverallMark >= 80) {
                 grade = Grade.HIGHER_DISTINCTION;
             }
@@ -59,11 +59,13 @@ public class Student {
             else if (totalOverallMark >= 50) {
                 grade = Grade.PASS;
             }
-            grade = Grade.FAIL;
 
         } else {
-            if (totalOverallMark > 50) grade = Grade.INCOMPLETE;
-            grade = Grade.FAIL;
+            if (totalOverallMark >= 50 && finalExamMark<50) {
+                grade = Grade.INCOMPLETE;
+            } else {
+                grade = Grade.FAIL;
+            }
         }
     }
 

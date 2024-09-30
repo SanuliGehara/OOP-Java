@@ -43,7 +43,7 @@ public class Main {
     public static double calculateMinorCompAverage() {
         double Minortotal = 0;
         for (Student std : students) {
-            Minortotal += std.calculateMinorAssignmentMarks();
+            Minortotal += std.getMinorCompMark();
         }
 
         return Minortotal/students.size();
@@ -52,7 +52,7 @@ public class Main {
     public static double calculateProjectCompAverage() {
         double projectTotal = 0;
         for (Student std : students) {
-            projectTotal += std.calculateProjectMarks();
+            projectTotal += std.getProjectMark();
         }
 
         return projectTotal/students.size();
@@ -73,7 +73,7 @@ public class Main {
         int number = input.nextInt();
 
         for (int i=0; i<number; i++) {
-            System.out.println("Enter details for student " + i+1);
+            System.out.println("Enter details for student " + (i+1));
             addStudent();
             System.out.println("_______________________________________");
         }
