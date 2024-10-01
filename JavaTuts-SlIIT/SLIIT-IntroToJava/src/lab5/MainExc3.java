@@ -22,10 +22,22 @@ public class MainExc3 {
             //    input marks
             for (int i=0; i<marks.length; i++) {
                 System.out.print("Enter mark "+(i+1)+": ");
-                marks[i] = scanner.nextInt();
+                int holder = scanner.nextInt();
+                if (holder < 0 ||holder > 100) {
+                    throw new RuntimeException("Mark Must be between 0 to 100");
+                } else {
+                    marks[i] = holder;
+                    System.out.println(marks[i]);
+                }
             }
 
             // 3. Calculate the avg marks
+            total = 0;
+            for (int mark: marks) {
+                total += mark;
+            }
+            double average = total/maxSubjects;
+            System.out.println("Average of the marks out of " + maxSubjects+ " subjects: " + average);
 
             // 4. Use a try catch block to
             //    prevent the following
@@ -38,7 +50,11 @@ public class MainExc3 {
             //         Exception
 
         } catch (InputMismatchException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Invalid Input type. Please use correct input format!");
+        }catch (ArithmeticException e) {
+            System.out.println("Can not divided by zero!");
+        } catch (Exception e) {
+            System.out.println(e);
         }
         finally {
             System.out.println("This code will be gurrentied to run");
