@@ -1,10 +1,10 @@
 package lab6.exercise1;
 
 public abstract class Item implements IPrint{
-    private String itemNo;
-    private String name;
-    private double unitPrice;
-    private int qty;
+    protected String itemNo;
+    protected String name;
+    protected double unitPrice;
+    protected int qty;
 
     @Override
     public void printLine() {
