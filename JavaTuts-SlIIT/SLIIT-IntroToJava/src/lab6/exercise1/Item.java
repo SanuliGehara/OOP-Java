@@ -16,7 +16,7 @@ public abstract class Item implements IPrint{
     public void printDetails() {
         System.out.println("Name: "+ name);
         System.out.println("Item No: "+ itemNo);
-        System.out.println("Unit Price: "+ unitPrice);
+        System.out.println("Unit Price: Rs."+ unitPrice);
         System.out.println("Quantity: "+ qty);
     }
 
